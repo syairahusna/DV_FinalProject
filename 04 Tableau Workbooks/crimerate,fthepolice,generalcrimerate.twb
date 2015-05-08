@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='mac' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8300.15.0219.2230                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='GENERAL_CRIME_RATE+ (C##CS329E_NBW292)' inline='true' name='oracle.42131.567142013900' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS329E_NBW292' server='129.152.144.84' service='ORCL.usuniversi01134.oraclecloud.internal' username='C##cs329e_nbw292'>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[POLICE_KILLLING_SEARCH].[MONTH_DATE]'>
+              </expression>
+              <expression op='[POLICE_KILLING_NGRAM].[YEAR]'>
+              </expression>
+            </expression>
+          </clause>
+          <relation join='full' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[GENERAL_CRIME_RATE].[DATE_YEAR]'>
+                </expression>
+                <expression op='[POLICE_KILLLING_SEARCH].[MONTH_DATE]'>
+                </expression>
+              </expression>
+            </clause>
+            <relation join='full' type='join'>
+              <clause type='join'>
+                <expression op='='>
+                  <expression op='[F_THE_POLICE_SEARCH].[WEEK_DATE]'>
+                  </expression>
+                  <expression op='[F_THE_POLICE_NGRAM].[YEAR]'>
+                  </expression>
+                </expression>
+              </clause>
+              <relation join='full' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[GENERAL_CRIME_RATE].[DATE_YEAR]'>
+                    </expression>
+                    <expression op='[F_THE_POLICE_SEARCH].[WEEK_DATE]'>
+                    </expression>
+                  </expression>
+                </clause>
+                <relation join='full' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[GENERAL_CRIME_RATE].[DATE_YEAR]'>
+                      </expression>
+                      <expression op='[CRIME_RATE_NGRAM].[YEAR]'>
+                      </expression>
+                    </expression>
+                  </clause>
+                  <relation name='GENERAL_CRIME_RATE' table='[C##CS329E_NBW292].[GENERAL_CRIME_RATE]' type='table' />
+                  <relation name='CRIME_RATE_NGRAM' table='[C##CS329E_NBW292].[CRIME_RATE_NGRAM]' type='table' />
+                </relation>
+                <relation name='F_THE_POLICE_SEARCH' table='[C##CS329E_NBW292].[F_THE_POLICE_SEARCH]' type='table' />
+              </relation>
+              <relation name='F_THE_POLICE_NGRAM' table='[C##CS329E_NBW292].[F_THE_POLICE_NGRAM]' type='table' />
+            </relation>
+            <relation name='POLICE_KILLLING_SEARCH' table='[C##CS329E_NBW292].[POLICE_KILLLING_SEARCH]' type='table' />
+          </relation>
+          <relation name='POLICE_KILLING_NGRAM' table='[C##CS329E_NBW292].[POLICE_KILLING_NGRAM]' type='table' />
+        </relation>
+        <cols>
+          <map key='[AGGR_ASSAULT]' value='[GENERAL_CRIME_RATE].[AGGR_ASSAULT]' />
+          <map key='[BURGLARY]' value='[GENERAL_CRIME_RATE].[BURGLARY]' />
+          <map key='[DATE_YEAR]' value='[GENERAL_CRIME_RATE].[DATE_YEAR]' />
+          <map key='[FORCIBLE_RAPE]' value='[GENERAL_CRIME_RATE].[FORCIBLE_RAPE]' />
+          <map key='[FUCK_THE_POLICE_COUNT]' value='[F_THE_POLICE_SEARCH].[FUCK_THE_POLICE_COUNT]' />
+          <map key='[LARCENY_THEFT]' value='[GENERAL_CRIME_RATE].[LARCENY_THEFT]' />
+          <map key='[MATCH_COUNT (F_THE_POLICE_NGRAM)]' value='[F_THE_POLICE_NGRAM].[MATCH_COUNT]' />
+          <map key='[MATCH_COUNT (POLICE_KILLING_NGRAM)]' value='[POLICE_KILLING_NGRAM].[MATCH_COUNT]' />
+          <map key='[MATCH_COUNT]' value='[CRIME_RATE_NGRAM].[MATCH_COUNT]' />
+          <map key='[MONTH_DATE]' value='[POLICE_KILLLING_SEARCH].[MONTH_DATE]' />
+          <map key='[MURDER]' value='[GENERAL_CRIME_RATE].[MURDER]' />
+          <map key='[PAGE_COUNT (F_THE_POLICE_NGRAM)]' value='[F_THE_POLICE_NGRAM].[PAGE_COUNT]' />
+          <map key='[PAGE_COUNT (POLICE_KILLING_NGRAM)]' value='[POLICE_KILLING_NGRAM].[PAGE_COUNT]' />
+          <map key='[PAGE_COUNT]' value='[CRIME_RATE_NGRAM].[PAGE_COUNT]' />
+          <map key='[POLICE_KILLLING_SEARCH]' value='[POLICE_KILLLING_SEARCH].[POLICE_KILLLING_SEARCH]' />
+          <map key='[PROPERTY]' value='[GENERAL_CRIME_RATE].[PROPERTY]' />
+          <map key='[ROBBERY]' value='[GENERAL_CRIME_RATE].[ROBBERY]' />
+          <map key='[TOTAL_CRIMES]' value='[GENERAL_CRIME_RATE].[TOTAL_CRIMES]' />
+          <map key='[VEHICLE_THEFT]' value='[GENERAL_CRIME_RATE].[VEHICLE_THEFT]' />
+          <map key='[VIOLENT]' value='[GENERAL_CRIME_RATE].[VIOLENT]' />
+          <map key='[VOLUME_COUNT (F_THE_POLICE_NGRAM)]' value='[F_THE_POLICE_NGRAM].[VOLUME_COUNT]' />
+          <map key='[VOLUME_COUNT (POLICE_KILLING_NGRAM)]' value='[POLICE_KILLING_NGRAM].[VOLUME_COUNT]' />
+          <map key='[VOLUME_COUNT]' value='[CRIME_RATE_NGRAM].[VOLUME_COUNT]' />
+          <map key='[WEEK_DATE]' value='[F_THE_POLICE_SEARCH].[WEEK_DATE]' />
+          <map key='[YEAR (F_THE_POLICE_NGRAM)]' value='[F_THE_POLICE_NGRAM].[YEAR]' />
+          <map key='[YEAR (POLICE_KILLING_NGRAM)]' value='[POLICE_KILLING_NGRAM].[YEAR]' />
+          <map key='[YEAR]' value='[CRIME_RATE_NGRAM].[YEAR]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>DATE_YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DATE_YEAR]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>DATE_YEAR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL_CRIMES</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTAL_CRIMES]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>TOTAL_CRIMES</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIOLENT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VIOLENT]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>VIOLENT</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROPERTY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PROPERTY]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>PROPERTY</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MURDER</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MURDER]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>MURDER</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FORCIBLE_RAPE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FORCIBLE_RAPE]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>FORCIBLE_RAPE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ROBBERY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ROBBERY]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>ROBBERY</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGGR_ASSAULT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGGR_ASSAULT]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>AGGR_ASSAULT</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BURGLARY</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BURGLARY]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>BURGLARY</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LARCENY_THEFT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LARCENY_THEFT]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>LARCENY_THEFT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE_THEFT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VEHICLE_THEFT]</local-name>
+            <parent-name>[GENERAL_CRIME_RATE]</parent-name>
+            <remote-alias>VEHICLE_THEFT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>126</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[CRIME_RATE_NGRAM]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MATCH_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MATCH_COUNT]</local-name>
+            <parent-name>[CRIME_RATE_NGRAM]</parent-name>
+            <remote-alias>MATCH_COUNT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAGE_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PAGE_COUNT]</local-name>
+            <parent-name>[CRIME_RATE_NGRAM]</parent-name>
+            <remote-alias>PAGE_COUNT</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VOLUME_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VOLUME_COUNT]</local-name>
+            <parent-name>[CRIME_RATE_NGRAM]</parent-name>
+            <remote-alias>VOLUME_COUNT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEK_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[WEEK_DATE]</local-name>
+            <parent-name>[F_THE_POLICE_SEARCH]</parent-name>
+            <remote-alias>WEEK_DATE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUCK_THE_POLICE_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[FUCK_THE_POLICE_COUNT]</local-name>
+            <parent-name>[F_THE_POLICE_SEARCH]</parent-name>
+            <remote-alias>FUCK_THE_POLICE_COUNT</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR (F_THE_POLICE_NGRAM)]</local-name>
+            <parent-name>[F_THE_POLICE_NGRAM]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MATCH_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MATCH_COUNT (F_THE_POLICE_NGRAM)]</local-name>
+            <parent-name>[F_THE_POLICE_NGRAM]</parent-name>
+            <remote-alias>MATCH_COUNT</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAGE_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PAGE_COUNT (F_THE_POLICE_NGRAM)]</local-name>
+            <parent-name>[F_THE_POLICE_NGRAM]</parent-name>
+            <remote-alias>PAGE_COUNT</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VOLUME_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VOLUME_COUNT (F_THE_POLICE_NGRAM)]</local-name>
+            <parent-name>[F_THE_POLICE_NGRAM]</parent-name>
+            <remote-alias>VOLUME_COUNT</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MONTH_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[MONTH_DATE]</local-name>
+            <parent-name>[POLICE_KILLLING_SEARCH]</parent-name>
+            <remote-alias>MONTH_DATE</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POLICE_KILLLING_SEARCH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[POLICE_KILLLING_SEARCH]</local-name>
+            <parent-name>[POLICE_KILLLING_SEARCH]</parent-name>
+            <remote-alias>POLICE_KILLLING_SEARCH</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[YEAR (POLICE_KILLING_NGRAM)]</local-name>
+            <parent-name>[POLICE_KILLING_NGRAM]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_DAT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MATCH_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[MATCH_COUNT (POLICE_KILLING_NGRAM)]</local-name>
+            <parent-name>[POLICE_KILLING_NGRAM]</parent-name>
+            <remote-alias>MATCH_COUNT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAGE_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PAGE_COUNT (POLICE_KILLING_NGRAM)]</local-name>
+            <parent-name>[POLICE_KILLING_NGRAM]</parent-name>
+            <remote-alias>PAGE_COUNT</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VOLUME_COUNT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[VOLUME_COUNT (POLICE_KILLING_NGRAM)]</local-name>
+            <parent-name>[POLICE_KILLING_NGRAM]</parent-name>
+            <remote-alias>VOLUME_COUNT</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aggr Assault' datatype='real' name='[AGGR_ASSAULT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Burglary' datatype='real' name='[BURGLARY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Date Year' datatype='datetime' name='[DATE_YEAR]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Forcible Rape' datatype='real' name='[FORCIBLE_RAPE]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Fuck The Police Count' datatype='real' name='[FUCK_THE_POLICE_COUNT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Larceny Theft' datatype='real' name='[LARCENY_THEFT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Match Count (F The Police Ngram)' datatype='real' name='[MATCH_COUNT (F_THE_POLICE_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Match Count (Police Killing Ngram)' datatype='real' name='[MATCH_COUNT (POLICE_KILLING_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Match Count' datatype='real' name='[MATCH_COUNT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Month Date' datatype='datetime' name='[MONTH_DATE]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Murder' datatype='real' name='[MURDER]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Page Count (F The Police Ngram)' datatype='real' name='[PAGE_COUNT (F_THE_POLICE_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Page Count (Police Killing Ngram)' datatype='real' name='[PAGE_COUNT (POLICE_KILLING_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Page Count' datatype='real' name='[PAGE_COUNT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Police Killling Search' datatype='real' name='[POLICE_KILLLING_SEARCH]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Property' datatype='real' name='[PROPERTY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Robbery' datatype='real' name='[ROBBERY]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Total Crimes' datatype='real' name='[TOTAL_CRIMES]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Vehicle Theft' datatype='real' name='[VEHICLE_THEFT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Violent' datatype='real' name='[VIOLENT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Volume Count (F The Police Ngram)' datatype='real' name='[VOLUME_COUNT (F_THE_POLICE_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Volume Count (Police Killing Ngram)' datatype='real' name='[VOLUME_COUNT (POLICE_KILLING_NGRAM)]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Volume Count' datatype='real' name='[VOLUME_COUNT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Week Date' datatype='datetime' name='[WEEK_DATE]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Year (F The Police Ngram)' datatype='datetime' name='[YEAR (F_THE_POLICE_NGRAM)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Year (Police Killing Ngram)' datatype='datetime' name='[YEAR (POLICE_KILLING_NGRAM)]' role='dimension' type='ordinal'>
+      </column>
+      <column caption='Year' datatype='datetime' name='[YEAR]' role='dimension' type='ordinal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GENERAL_CRIME_RATE+ (C##CS329E_NBW292)' name='oracle.42131.567142013900' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.42131.567142013900'>
+            <column caption='Match Count (Police Killing Ngram)' datatype='real' name='[MATCH_COUNT (POLICE_KILLING_NGRAM)]' role='measure' type='quantitative'>
+            </column>
+            <column caption='Month Date' datatype='datetime' name='[MONTH_DATE]' role='dimension' type='ordinal'>
+            </column>
+            <column caption='Police Killling Search' datatype='real' name='[POLICE_KILLLING_SEARCH]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[MATCH_COUNT (POLICE_KILLING_NGRAM)]' derivation='Sum' name='[sum:MATCH_COUNT (POLICE_KILLING_NGRAM):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[POLICE_KILLLING_SEARCH]' derivation='Sum' name='[sum:POLICE_KILLLING_SEARCH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MONTH_DATE]' derivation='Year' name='[yr:MONTH_DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[oracle.42131.567142013900].[sum:MATCH_COUNT (POLICE_KILLING_NGRAM):qk]' included-values='non-null'>
+          </filter>
+          <filter class='quantitative' column='[oracle.42131.567142013900].[sum:POLICE_KILLLING_SEARCH:qk]' included-values='non-null'>
+          </filter>
+          <slices>
+            <column>[oracle.42131.567142013900].[sum:POLICE_KILLLING_SEARCH:qk]</column>
+            <column>[oracle.42131.567142013900].[sum:MATCH_COUNT (POLICE_KILLING_NGRAM):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[oracle.42131.567142013900].[yr:MONTH_DATE:ok]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' y-axis-name='[oracle.42131.567142013900].[sum:MATCH_COUNT (POLICE_KILLING_NGRAM):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' y-axis-name='[oracle.42131.567142013900].[sum:POLICE_KILLLING_SEARCH:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1060' />
+                <format attr='maxwidth' value='1060' />
+                <format attr='minheight' value='424' />
+                <format attr='maxheight' value='424' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([oracle.42131.567142013900].[sum:POLICE_KILLLING_SEARCH:qk] + [oracle.42131.567142013900].[sum:MATCH_COUNT (POLICE_KILLING_NGRAM):qk])</rows>
+        <cols>[oracle.42131.567142013900].[yr:MONTH_DATE:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='59'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.42131.567142013900].[qr:YEAR (F_THE_POLICE_NGRAM):ok]</field>
+          <field>[oracle.42131.567142013900].[yr:DATE_YEAR:ok]</field>
+          <field>[oracle.42131.567142013900].[yr:MONTH_DATE:ok]</field>
+          <field>[oracle.42131.567142013900].[yr:WEEK_DATE:ok]</field>
+          <field>[oracle.42131.567142013900].[yr:YEAR (F_THE_POLICE_NGRAM):ok]</field>
+          <field>[oracle.42131.567142013900].[yr:YEAR (POLICE_KILLING_NGRAM):ok]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
