@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1431298775113.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FD84A8C7",
+    "lastKnownWriteTime" : 19985118483447809,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "hwt",
+        "contentUrl" : "content?title=hwt&file=1986deaba7ba49c4b540ba6afc910d22.htm",
+        "displayedObservations" : 9,
+        "displayedVariables" : 13,
+        "totalObservations" : 9,
+        "variables" : 13
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

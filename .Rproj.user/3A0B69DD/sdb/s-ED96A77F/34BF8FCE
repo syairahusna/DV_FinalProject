@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1431298491534.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "34BF8FCE",
+    "lastKnownWriteTime" : 19985118490984564,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "hws",
+        "contentUrl" : "content?title=hws&file=5a89e4d235c04b62990bbd00f1aeb0f2.htm",
+        "displayedObservations" : 142,
+        "displayedVariables" : 7,
+        "totalObservations" : 142,
+        "variables" : 7
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

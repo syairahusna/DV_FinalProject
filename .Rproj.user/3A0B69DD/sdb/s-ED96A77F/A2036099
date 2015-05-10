@@ -1,12 +1,12 @@
 {
     "contents" : "require(\"RCurl\")\nrequire(\"jsonlite\")\nhwt <- data.frame(fromJSON(getURL(URLencode(gsub(\"\\n\", \" \", '129.152.144.84:5001/rest/native/?query=\"select * from hubway_trips WHERE ROWNUM<10\"')),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_nm22335', PASS='orcl_nm22335', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE)))\n\nhws <- data.frame(fromJSON(getURL(URLencode(gsub(\"\\n\", \" \", '129.152.144.84:5001/rest/native/?query=\"select * from hubway_stations\"')),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521:ORCL', USER='C##cs329e_nm22335', PASS='orcl_nm22335', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE)))\n",
     "created" : 1431290237208.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "1866309877",
     "id" : "A2036099",
-    "lastKnownWriteTime" : 1431286569,
+    "lastKnownWriteTime" : 1431298359,
     "path" : "~/GitHub/DV_FinalProject/DV_FinalProject/01 Data/AccessOracleDatabase.R",
     "project_path" : "01 Data/AccessOracleDatabase.R",
     "properties" : {

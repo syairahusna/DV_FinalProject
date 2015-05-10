@@ -1,0 +1,17 @@
+{
+    "contents" : "# 3-D scatterplot\nrequire(\"rgl\")\nrequire(\"RColorBrewer\")\nplot3d(hwt$MUNICIPAL,  # x variable\n       hwt$LAT,   # y variable\n       hwt$VOCABULARY,  # z variable\n       xlab = \"MUNICIPAL\",\n       ylab = \"LAT\",\n       zlab = \"LNG\",\n       col = rainbow(1000),\n       size = 8)",
+    "created" : 1431298463131.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "919012489",
+    "id" : "569B2BDF",
+    "lastKnownWriteTime" : 1431286659,
+    "path" : "~/GitHub/DV_FinalProject/DV_FinalProject/03 Visualizations/3-D scatterplot.R",
+    "project_path" : "03 Visualizations/3-D scatterplot.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
