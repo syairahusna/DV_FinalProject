@@ -108,13 +108,13 @@ generalSlurs = ['gang',
 'minorities',
 'minority']
 
-file1 = open('ChrisRock.csv', 'rU')
-file2 = open('ChrisRock2.csv', 'wb')
+file1 = open('RegularFunny.csv', 'rU')
+file2 = open('RegularFunny2.csv', 'wb')
 reader = csv.reader(file1)
 writer = csv.writer(file2)
 # writer.writerow(('Video Title', 'Video ID', 'User' , 'Comment', 'Published', 'SentimentScore', 'PositiveWords', 'NegativeWords', 'AgreeableWords', 'NeutralRaceWords', 'WhiteSlurWords' , 'BlackSlurWords' , 'HispanicSlurWords', 'GeneralSlurs'))
 i = 0
-writer.writerow(('Video_Title', 'Video_ID', 'User_Name' , 'Comment_Content', 'Published_Date', 'PositiveWords', 'NegativeWords', 'AgreeableWords', 'NeutralRaceWords', 'WhiteSlurWords' , 'BlackSlurWords' , 'HispanicSlurWords', 'GeneralSlurs'))
+writer.writerow(('Video_Title', 'Video_ID', 'User_Name' , 'Comment_Content', 'Published_Date', 'SentimentScore', 'PositiveWords', 'NegativeWords', 'AgreeableWords', 'NeutralRaceWords', 'WhiteSlurWords' , 'BlackSlurWords' , 'HispanicSlurWords', 'GeneralSlurs'))
 
 for row in reader:
   # print ('row[0] is ' + row[0])
@@ -206,4 +206,4 @@ for row in reader:
   mystring = new_str.replace('\n', ' ').replace('\r', '')
   # print ('newDate is ' + newDate)
   # writer.writerow(('Video_Title', 'Video_ID', 'User_Name' , 'Comment_Content', 'Published_Date', 'SentimentScore', 'PositiveWords', 'NegativeWords', 'AgreeableWords', 'NeutralRaceWords', 'WhiteSlurWords' , 'BlackSlurWords' , 'HispanicSlurWords', 'GeneralSlurs'))
-  writer.writerow((row[0], row[1], row[2], mystring, newDate2, positiveWordCount,negativeWordCount,agreeWordCount,neutralRaceCount,whiteSlurCount, blackSlurCount, hispanicSlurCount, generalSlurCount))
+  writer.writerow((row[0], row[1], row[2], mystring, newDate2, row[5], positiveWordCount,negativeWordCount,agreeWordCount,neutralRaceCount,whiteSlurCount, blackSlurCount, hispanicSlurCount, generalSlurCount))
