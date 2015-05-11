@@ -1,0 +1,16 @@
+---
+title: "DV_FinalProject - information to access"
+author: "Syairah Ridzuan, Madeline Packard, Arthur DeVitalis"
+date: "May 11, 2015"
+output: html_document
+---
+
+Storypoints used for presentation 
+04 Tableau Workbooks > hubway_1.twb
+
+username:C##cs329e_nm22335
+password:orcl_nm22335
+
+For scatterplot matrix, access 03 Visualizations > Scatterplot matrix.R
+
+
