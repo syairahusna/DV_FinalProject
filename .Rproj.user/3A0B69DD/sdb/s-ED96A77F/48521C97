@@ -1,21 +1,21 @@
 {
     "contents" : "",
-    "created" : 1431298491534.000,
+    "created" : 1431301584735.000,
     "dirty" : false,
     "encoding" : "",
     "folds" : "",
     "hash" : "0",
-    "id" : "34BF8FCE",
-    "lastKnownWriteTime" : 19985118490984564,
+    "id" : "48521C97",
+    "lastKnownWriteTime" : 412933872,
     "path" : null,
     "project_path" : null,
     "properties" : {
         "caption" : "hws",
-        "contentUrl" : "content?title=hws&file=5a89e4d235c04b62990bbd00f1aeb0f2.htm",
-        "displayedObservations" : 142,
+        "contentUrl" : "content?title=hws&file=1694c37adbbb43e4bd0ff7c6dd3e94dd.htm",
+        "displayedObservations" : "142",
         "displayedVariables" : 7,
-        "totalObservations" : 142,
-        "variables" : 7
+        "totalObservations" : "142",
+        "variables" : "7"
     },
     "source_on_save" : false,
     "type" : "r_dataframe"

@@ -1,12 +1,12 @@
 {
-    "contents" : "# Scatterplot matrix using \"pairs\"\npanel.hist <- function(x, ...)\n{\n  usr <- par(\"usr\"); on.exit(par(usr))\n  par(usr = c(usr[1:2], 0, 1.5) )\n  h <- hist(x, plot = FALSE)\n  breaks <- h$breaks; nB <- length(breaks)\n  y <- h$counts; y <- y/max(y)\n  rect(breaks[-nB], 0, breaks[-1], y,  ...)\n }\n\npairs(hws[c(2:6)], \n      panel = panel.smooth,  # Optional smoother\n      main = \"Scatterplot Matrix for Hubway Data\",\n      diag.panel = panel.hist, \n      pch = 16, \n      col = \"lightgray\")\n",
+    "contents" : "# Scatterplot matrix using \"pairs\" for Hubway_Stations\npanel.hist <- function(x, ...)\n{\n  usr <- par(\"usr\"); on.exit(par(usr))\n  par(usr = c(usr[1:2], 0, 1.5) )\n  h <- hist(x, plot = FALSE)\n  breaks <- h$breaks; nB <- length(breaks)\n  y <- h$counts; y <- y/max(y)\n  rect(breaks[-nB], 0, breaks[-1], y,  ...)\n }\n\npairs(hws[c(2:6)], \n      panel = panel.smooth,  # Optional smoother\n      main = \"Scatterplot Matrix for Hubway Data\",\n      diag.panel = panel.hist, \n      pch = 16, \n      col = \"lightgray\")\n\n\n# Creating scatterplot matrices\n\nnames(hws)\n\n# Basic Scatterplot Matrix\npairs(~TERMINAL + STATION + MUNICIPAL + LAT + LNG,\n      data = hws, \n      pch = 20,\n      main = \"Simple Scatterplot Matrix for Hubway Stations\")\n\n# Use \"Pairs Plot\" from \"psych\" package\ninstall.packages(\"psych\")\nlibrary(\"psych\")\npairs.panels(hws[c(2, 4, 5, 6)], gap = 0)\n",
     "created" : 1431291650500.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1713402399",
+    "hash" : "2874838335",
     "id" : "4D8A9D8E",
-    "lastKnownWriteTime" : 1431294925,
+    "lastKnownWriteTime" : 1431360640,
     "path" : "~/GitHub/DV_FinalProject/DV_FinalProject/03 Visualizations/Scatterplot matrix.R",
     "project_path" : "03 Visualizations/Scatterplot matrix.R",
     "properties" : {
